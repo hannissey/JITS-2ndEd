@@ -15,7 +15,7 @@ public class Bank {
 	
 	// helper method to find the index of a specified amount
 	// search(String) : int
-	private int search(String accountNumberIn) {
+	public int search(String accountNumberIn) {
 		for (int i = 0; i < total; i++) {
 			BankAccount tempAccount = list[i]; // find the account at index i
 			String tempNumber = tempAccount.getAccountNumber();

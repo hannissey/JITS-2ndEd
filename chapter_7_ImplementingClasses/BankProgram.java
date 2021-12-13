@@ -55,16 +55,26 @@ public class BankProgram {
 		System.out.println("Enter account name: ");
 		String name = EasyScanner.nextString();
 		
-		// create bank account
-		BankAccount account = new BankAccount(number, name);
+		// check for duplicate account number
+		int duplicate = bankIn.search(number);
 		
-		// add account to the list
-		boolean ok = bankIn.add(account);
-		if (!ok) {
-			System.out.println("The list is full. ");
+		if (duplicate == -999) {
+			// create bank account
+			BankAccount account = new BankAccount(number, name);
+			
+			// add account to the list
+			boolean ok = bankIn.add(account);
+			if (!ok) {
+				System.out.println("The list is full. ");
+			} else {
+				System.out.println("Account created. ");
+			}		
 		} else {
-			System.out.println("Account created. ");
+			System.out.println("Sorry, account number taken. Please choose another.");
 		}
+
+		
+
 	}
 	
 	// remove account
