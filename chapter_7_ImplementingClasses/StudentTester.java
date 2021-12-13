@@ -6,7 +6,7 @@ public class StudentTester {
 		Student[] studentList = new Student[2];
 		
 		studentList[0] = new Student("Paul Harris", "1");
-		studentList[0].enterMarks(60, 0, 79);
+		studentList[0].enterMarks(60, 56, 79);
 		
 		studentList[1] = new Student("Kamala Harris", "2");
 		studentList[1].enterMarks(99, 89, 85);
