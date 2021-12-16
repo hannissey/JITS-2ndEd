@@ -52,9 +52,6 @@ public class Bank {
 	
 	// add(BankAccount) : boolean 
 	public boolean add(BankAccount accountIn) {
-		
-		
-		
 		if (!isFull()) // check if list is full 
 		{
 			list[total] = accountIn; // add item

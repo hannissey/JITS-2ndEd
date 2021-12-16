@@ -21,6 +21,8 @@ public class BankAccountTester2 {
 		// add interest to account 1
 		account1.addInterest();
 		
+		
+		
 		// display the account details
 		System.out.println("Account Number: " + account1.getAccountNumber());
 		System.out.println("Account Name: " + account1.getAccountName());
